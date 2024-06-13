@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Tiny5&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --color1: #F3DC1D;
+  --color2: #000;
+  --color3: #fff;
+  --color4: #7C6C0C;
+
+
+  --max-width: 1400px;
+
+  --padding: 8px;
+
+  --margin: 40px;
+
+  --border-rad: 8px;
+
+  --transition-delay: 1s;
+
+  --font-size: 16px;
+}
+
+::selection{
+  background-color: var(--color1);
+  color: var(--color3)
+}
+
+
+body{
+  background-color: var(--color2);
+  color: var(--color3);
+  font-size: var(--font-size);
+  font-family: "Rubik", sans-serif !important;
+  line-height: 24px;
+}
+
+
+header{
+  text-align: center;
+  color: var(--color1);
+  border-bottom: solid 1px var(--color2);
+  margin-bottom: var(--margin);
+}
+
+section{
+  padding: var(--padding);
+}
+
+a{
+  color: var(--color1);
+  text-decoration: none;
+}
+
+h1, h2{
+  padding: var(--padding);
+}
+
+p{
+  font-size: 1rem;
+  margin: 0 0 var(--margin);
+}
+
+p::first-letter{
+  font-size: 1.4rem;
+  color: var(--color1);
+  font-weight: bold;
+}
+
+ul{
+  list-style: none;
+}
+
+ul.list > li.item{
+  cursor: pointer;
+}
+
+
+li.item:hover a{
+  color: var(--color2);
+}
+
+
+.container{
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--padding);
+}
+
+.card{
+  width: 450px;
+  border: solid 1px var(--color1);
+  border-radius: var(--border-rad);
+  margin: var(--margin) auto;
+}
+
+.card__header{
+  padding: var(--padding);
+}
+
+.card__title{
+  word-break: break-all;
+}
+
+
+.card__body{
+  padding: var(--padding);
+}
+
+.card__img{
+  width: 100%;
+}
+
+.card__paragraph{
+  padding: var(--padding);
+}
+
+.button{
+  display: inline-flex;
+  align-items: center;
+  padding: var(--padding);
+  background-color: var(--color1);
+  color: var(--color2);
+  border-radius: var(--border-rad);
+  font-size: .9rem;
+  border: solid 1.5px var(--color1);
+  font-weight: bold;
+  transition: var(--transition-delay);
+}
+
+.button__icon{
+  font-size: 1.5rem;
+}
+
+.button--outline{
+  background-color: var(--color2);
+  color: var(--color1);
+}
+
+.button:hover{
+  background-color: var(--color2);
+  color: var(--color1);
+}
+
+.button--outline:hover{
+  background-color: var(--color1);
+  color: var(--color2);
+}
+
+
+.list{
+  text-align: center;
+  padding: var(--padding)
+}
+
+.list__item{
+  border-bottom: solid 1px var(--color1);
+  padding: var(--padding);
+  transition: var(--transition-delay);
+  font-size: var(--font-size);
+}
+
+.list__item:hover{
+  background-color: var(--color1);
+  color: var(--color2);
+}
